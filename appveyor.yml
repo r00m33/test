@@ -3,9 +3,9 @@ image: Visual Studio 2019
 
 # Build configuration
 build_script:
-  - cmd: msbuild "C:\projects\test\Crop.sln" /verbosity:minimal /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll"
+  - cmd: dotnet build Crop/Crop.csproj --configuration Debug
 
 # Define the artifacts to be uploaded after a successful build
 artifacts:
-  - path: \projects\test\Crop\bin\Debug\*.exe
-    name: Crop
+  - path: Crop\bin\Debug\*.exe
+    name: Executables
