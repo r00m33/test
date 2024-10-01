@@ -8,4 +8,4 @@ build_script:
 # Define the artifacts to be uploaded after a successful build
 artifacts:
   - path: Crop\bin\Debug\*.exe
-    name: Executables
+    name: Crop
