@@ -7,5 +7,5 @@ build_script:
 
 # Define the artifacts to be uploaded after a successful build
 artifacts:
-  - path: bin\Release\net461\*.exe
+  - path: \projects\test\Crop\bin\Debug\*.exe
     name: Crop
